@@ -1,0 +1,188 @@
+{
+    "DoubleSwords_Blader": {
+        "SpecialSkillSlot": 7,
+        "SkillId": 21,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 2
+    },
+    "DoubleSwords_Sawtooth": {
+        "SpecialSkillSlot": 17,
+        "SkillId": 25,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 15
+    },
+    "Sword_Pickaxe": {
+        "SpecialSkillSlot": 29,
+        "SkillId": 12,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 7
+    },
+    "Helberd_Necro": {
+        "SpecialSkillSlot": 35,
+        "SkillId": 38,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 30
+    },
+    "Glaves_ImpactSpikes": {
+        "SpecialSkillSlot": 39,
+        "SkillId": 52,
+        "ActionGroup": "PlayerGlovesActionGroup",
+        "FamilyID": 18
+    },
+    "Tachi_Materialism": {
+        "SpecialSkillSlot": 42,
+        "SkillId": 44,
+        "ActionGroup": "PlayerTaChiActionGroup",
+        "FamilyID": 16
+    },
+    "Sword_Fisherman": {
+        "SpecialSkillSlot": 47,
+        "SkillId": 17,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 26
+    },
+    "Sword_Sanctification": {
+        "SpecialSkillSlot": 53,
+        "SkillId": 13,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 21
+    },
+    "Halberd_Sickle": {
+        "SpecialSkillSlot": 57,
+        "SkillId": 35,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 14
+    },
+    "Sword_Necromancer": {
+        "SpecialSkillSlot": 60,
+        "SkillId": 18,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 22
+    },
+    "DoubleSwords_Jitte": {
+        "SpecialSkillSlot": 70,
+        "SkillId": 27,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 27
+    },
+    "Halberd_Blader": {
+        "SpecialSkillSlot": 73,
+        "SkillId": 36,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 3
+    },
+    "Halberd_RoadSign": {
+        "SpecialSkillSlot": 79,
+        "SkillId": 33,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 29
+    },
+    "DounbleSwords_Necro": {
+        "SpecialSkillSlot": 86,
+        "SkillId": 23,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 23
+    },
+    "DoubleSwords_Reaper": {
+        "SpecialSkillSlot": 95,
+        "SkillId": 24,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 8
+    },
+    "Halberd_Lore": {
+        "SpecialSkillSlot": 97,
+        "SkillId": 30,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 12
+    },
+    "DoubleSwords_Fireaxe": {
+        "SpecialSkillSlot": 115,
+        "SkillId": 26,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 13
+    },
+    "Glaves_Necro": {
+        "SpecialSkillSlot": 125,
+        "SkillId": 51,
+        "ActionGroup": "PlayerGlovesActionGroup",
+        "FamilyID": 11
+    },
+    "Sword_Loskid": {
+        "SpecialSkillSlot": 143,
+        "SkillId": 15,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 10
+    },
+    "Halberd_CleansingKnight": {
+        "SpecialSkillSlot": 148,
+        "SkillId": 37,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 20
+    },
+    "Halberd_DecayedLeaf": {
+        "SpecialSkillSlot": 161,
+        "SkillId": 39,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 24
+    },
+    "Tachi_RedDeer": {
+        "SpecialSkillSlot": 163,
+        "SkillId": 43,
+        "ActionGroup": "PlayerTaChiActionGroup",
+        "FamilyID": 4
+    },
+    "Sword_Blader": {
+        "SpecialSkillSlot": 172,
+        "SkillId": 11,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 1
+    },
+    "Halberd_Loskid": {
+        "SpecialSkillSlot": 188,
+        "SkillId": 31,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 9
+    },
+    "Glaves_HolyEmbrace": {
+        "SpecialSkillSlot": 190,
+        "SkillId": 53,
+        "ActionGroup": "PlayerGlovesActionGroup",
+        "FamilyID": 19
+    },
+    "Sword_Broken": {
+        "SpecialSkillSlot": 4,
+        "SkillId": 14,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 31
+    },
+    "Halberd_Robot": {
+        "SpecialSkillSlot": 11,
+        "SkillId": 34,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 6
+    },
+    "Halberd_OldBlader": {
+        "SpecialSkillSlot": 201,
+        "SkillId": 32,
+        "ActionGroup": "PlayerHalberdActionGroup",
+        "FamilyID": 32
+    },
+    "Sword_WaterPipe": {
+        "SpecialSkillSlot": 31,
+        "SkillId": 19,
+        "ActionGroup": "PlayerLongSwordActionGroup",
+        "FamilyID": 5
+    },
+    "DoubleSwords_HunterBlades": {
+        "SpecialSkillSlot": 90,
+        "SkillId": 22,
+        "ActionGroup": "PlayerDoubleBladeSwordActionGroup",
+        "FamilyID": 28
+    },
+    "Tachi_Mercy": {
+        "SpecialSkillSlot": 241,
+        "SkillId": 42,
+        "ActionGroup": "PlayerTaChiActionGroup",
+        "FamilyID": 17
+    }
+}
