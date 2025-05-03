@@ -11,6 +11,8 @@ A modding utility for overriding various in-game data of *AI LIMIT*, including w
 3. Extract and place the `DataOverrideKit.dll` file into your `Mods` folder.
 4. Launch the game to initialize the mod.
 
+* If you have used previous versions of this mod, please make sure to delete the old dlls and move/review your configs to prevent mod conflicts.
+
 ---
 
 ## ⚙️ Usage

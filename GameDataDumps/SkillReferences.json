@@ -1,0 +1,224 @@
+{
+    "DoubleSwords_Blader": {
+        "Costs": {
+            "P_DualBlades_SkillAttack1": [4, 4, 4, 8]
+        },
+        "Name": "机兵双刀",
+        "SkillId": 21
+    },
+    "DoubleSwords_Fireaxe": {
+        "Costs": {
+            "P_DualBlades_SkillAttack7": [15],
+            "P_DualBlades_SkillAttack7_2": [15]
+        },
+        "Name": "成对钢斧",
+        "SkillId": 26
+    },
+    "DoubleSwords_HunterBlades": {
+        "Costs": {
+            "P_DualBlades_SkillAttack2": [5, 20]
+        },
+        "Name": "猎人双刀",
+        "SkillId": 22
+    },
+    "DoubleSwords_Jitte": {
+        "Costs": {
+            "P_DualBlades_SkillAttack8": [10, 10, 15]
+        },
+        "Name": "十手",
+        "SkillId": 27
+    },
+    "DoubleSwords_Reaper": {
+        "Costs": {
+            "P_DualBlades_SkillAttack5": [5, 5, 5, 5, 20]
+        },
+        "Name": "收割者",
+        "SkillId": 24
+    },
+    "DoubleSwords_Sawtooth": {
+        "Costs": {
+            "P_DualBlades_SkillAttack6": [10, 10, 10]
+        },
+        "Name": "碎骨者",
+        "SkillId": 25
+    },
+    "DounbleSwords_Necro": {
+        "Costs": {
+            "P_DualBlades_SkillAttack3": [2, 3, 2, 3, 10, 2, 3, 10]
+        },
+        "Name": "侵蚀机兵对剑",
+        "SkillId": 23
+    },
+    "Glaves_HolyEmbrace": {
+        "Costs": {
+            "P_Glaves_SkillAttack3": [25]
+        },
+        "Name": "圣拥",
+        "SkillId": 53
+    },
+    "Glaves_ImpactSpikes": {
+        "Costs": {
+            "P_Glaves_SkillAttack2": [10, 5, 3, 3, 3, 3, 3]
+        },
+        "Name": "冲击钉",
+        "SkillId": 52
+    },
+    "Glaves_Necro": {
+        "Costs": {
+            "P_Glaves_SkillAttack1": [5, 5, 5, 5, 5, 5, 10]
+        },
+        "Name": "深渊爪",
+        "SkillId": 51
+    },
+    "Halberd_Blader": {
+        "Costs": {
+            "P_Halberd_SkillAttack6": [10, 10]
+        },
+        "Name": "机兵大剑",
+        "SkillId": 36
+    },
+    "Halberd_CleansingKnight": {
+        "Costs": {
+            "P_Halberd_SkillAttack7": [10, 20]
+        },
+        "Name": "骑士长枪",
+        "SkillId": 37
+    },
+    "Halberd_DecayedLeaf": {
+        "Costs": {
+            "P_Halberd_SkillAttack9": [15, 20]
+        },
+        "Name": "朽叶长枪",
+        "SkillId": 39
+    },
+    "Halberd_Lore": {
+        "Costs": {
+            "P_Halberd_SkillAttack10": [4, 2, 2, 2, 2, 2, 2, 2, 2, 15]
+        },
+        "Name": "废铁长枪",
+        "SkillId": 30
+    },
+    "Halberd_Loskid": {
+        "Costs": {
+            "P_Halberd_SkillAttack1": [15],
+            "P_Halberd_SkillAttack1_2": [10, 15],
+            "P_Halberd_SkillAttack1_3": [25]
+        },
+        "Name": "裁决者",
+        "SkillId": 31
+    },
+    "Halberd_OldBlader": {
+        "Costs": {
+            "P_Halberd_SkillAttack2": [15, 15]
+        },
+        "Name": "旧机兵大剑",
+        "SkillId": 32
+    },
+    "Halberd_RoadSign": {
+        "Costs": {
+            "P_Halberd_SkillAttack3": [10, 20]
+        },
+        "Name": "路牌",
+        "SkillId": 33
+    },
+    "Halberd_Robot": {
+        "Costs": {
+            "P_Halberd_SkillAttack4": [25]
+        },
+        "Name": "机器人长戟",
+        "SkillId": 34
+    },
+    "Halberd_Sickle": {
+        "Costs": {
+            "P_Halberd_SkillAttack5": [25]
+        },
+        "Name": "教会镰刀",
+        "SkillId": 35
+    },
+    "Helberd_Necro": {
+        "Costs": {
+            "P_Halberd_SkillAttack8": [10, 10, 15]
+        },
+        "Name": "侵蚀机兵大剑",
+        "SkillId": 38
+    },
+    "Sword_Blader": {
+        "Costs": {
+            "P_NormalSword_SkillAttack1": [8, 8, 9]
+        },
+        "Name": "机兵直剑",
+        "SkillId": 11
+    },
+    "Sword_Broken": {
+        "Costs": {
+            "P_NormalSword_SkillAttack4": [10, 10]
+        },
+        "Name": "锈蚀长剑",
+        "SkillId": 14
+    },
+    "Sword_Fisherman": {
+        "Costs": {
+            "P_NormalSword_SkillAttack7": [10, 20]
+        },
+        "Name": "渔夫直剑",
+        "SkillId": 17
+    },
+    "Sword_Loskid": {
+        "Costs": {
+            "P_NormalSword_SkillAttack5": [40]
+        },
+        "Name": "晨霜",
+        "SkillId": 15
+    },
+    "Sword_Necromancer": {
+        "Costs": {
+            "P_NormalSword_SkillAttack8": [10, 25]
+        },
+        "Name": "侵蚀机兵长剑",
+        "SkillId": 18
+    },
+    "Sword_Pickaxe": {
+        "Costs": {
+            "P_NormalSword_SkillAttack2": [10, 10, 10]
+        },
+        "Name": "拾荒者镐",
+        "SkillId": 12
+    },
+    "Sword_Sanctification": {
+        "Costs": {
+            "P_NormalSword_SkillAttack3": [30]
+        },
+        "Name": "仪式直剑",
+        "SkillId": 13
+    },
+    "Sword_WaterPipe": {
+        "Costs": {
+            "P_NormalSword_SkillAttack9": [20]
+        },
+        "Name": "铁管",
+        "SkillId": 19
+    },
+    "Tachi_Materialism": {
+        "Costs": {
+            "P_Tachi_SkillAttack4_2": [7, 6, 6, 6]
+        },
+        "Name": "唯物主义",
+        "SkillId": 44
+    },
+    "Tachi_Mercy": {
+        "Costs": {
+            "P_Tachi_SkillAttack2": [20, 20]
+        },
+        "Name": "慈爱",
+        "SkillId": 42
+    },
+    "Tachi_RedDeer": {
+        "Costs": {
+            "P_Tachi_SkillAttack3_1": [15],
+            "P_Tachi_SkillAttack3_2": [15],
+            "P_Tachi_SkillAttack3_3": [20]
+        },
+        "Name": "红鹿",
+        "SkillId": 43
+    }
+}
