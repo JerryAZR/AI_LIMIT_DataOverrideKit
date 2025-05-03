@@ -1,0 +1,8 @@
+{
+    "Tachi_Mercy": {
+        "SkillReplacement": "Tachi_Materialism"
+    },
+    "Tachi_Materialism": {
+        "SkillReplacement": "Tachi_Mercy"
+    }
+}
