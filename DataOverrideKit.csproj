@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -468,6 +468,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="Accessory\AccessoryMod.cs" />
+		<Compile Include="Accessory\AccessoryOverrideLoader.cs" />
+		<Compile Include="Armor\ArmorMod.cs" />
 		<Compile Include="DataOverrideKit.cs" />
 		<Compile Include="Weapon\ActionGroupOverrideLoader.cs" />
 		<Compile Include="Weapon\WeaponMod.cs" />
@@ -476,6 +479,10 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Weapon\WeaponReferences.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Samboy063.Tomlet" Version="6.0.0" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
