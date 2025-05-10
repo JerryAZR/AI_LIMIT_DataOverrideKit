@@ -1,0 +1,7 @@
+[2] # Void Nucleus
+CrystalAbsorptionRate=60
+CrystalRetentionRate=90
+EnergyAbsorption=0.66
+
+[10] # Guardian's Nucleus
+EnergyAbsorption=1
