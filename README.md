@@ -26,7 +26,7 @@ See the documentation for supported formats:
 - [Weapon Overrides](./Docs/WeaponOverride.md)
 - [Skill Overrides](./Docs/SkillOverride.md)
 - [Accessory Overrides](./Docs/AccessoryOverride.md)
-- [Armor Overrides](./Docs/ArmorOverride.md) *(planned)*
+- [Armor Overrides](./Docs/ArmorOverride.md)
 
 ---
 

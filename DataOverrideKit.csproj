@@ -471,6 +471,7 @@
 		<Compile Include="Accessory\AccessoryMod.cs" />
 		<Compile Include="Accessory\AccessoryOverrideLoader.cs" />
 		<Compile Include="Armor\ArmorMod.cs" />
+		<Compile Include="Armor\ArmorOverrideLoader.cs" />
 		<Compile Include="DataOverrideKit.cs" />
 		<Compile Include="Weapon\ActionGroupOverrideLoader.cs" />
 		<Compile Include="Weapon\WeaponMod.cs" />

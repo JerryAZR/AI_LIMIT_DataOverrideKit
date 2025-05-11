@@ -1,4 +1,5 @@
 ﻿using DataOverrideKit.Accessory;
+using DataOverrideKit.Armor;
 using DataOverrideKit.Weapon;
 using Il2Cpp;
 using MelonLoader;
@@ -11,6 +12,7 @@ namespace DataOverrideKit {
         public override void OnInitializeMelon() {
             WeaponMod.Initialize(LoggerInstance);
             AccessoryMod.Initialize(LoggerInstance);
+            ArmorMod.Initialize(LoggerInstance);
             LoggerInstance.Msg("Initialized.");
         }
 

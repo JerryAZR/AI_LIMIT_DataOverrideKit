@@ -17,10 +17,9 @@ namespace DataOverrideKit.Weapon {
         public string ActionGroup { get; set; }
         public int FamilyID { get; set; }
         public int SkillId { get; set; }
-        public int SpecialSkillSlot { get; set; }
 
         public override string ToString() {
-            return $"{ActionGroup}, SkillId={SkillId}, Slot={SpecialSkillSlot}";
+            return $"{ActionGroup}, SkillId={SkillId}";
         }
     }
 

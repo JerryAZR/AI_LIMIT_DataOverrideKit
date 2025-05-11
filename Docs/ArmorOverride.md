@@ -1,6 +1,6 @@
 # Accessory Overrides Format (a.k.a. Nucleus Overrides)
 
-This configuration lets you override the properties of Headwares and Body Armors.
+This configuration lets you override the properties of Headwears and Body Armors.
 
 ## 📂 File Location
 
@@ -19,7 +19,7 @@ UserData/DataOverrideKit/AccessoryOverrides.json
 
 ### Key
 
-Each json entry key (or toml table name) is `H.<ID>` for headware, `B.<ID>` for body armor.
+Each json entry key (or toml table name) is `H.<ID>` for headwear, `B.<ID>` for body armor.
 
 | ID  | English Name              | Chinese Name     |
 |-----|---------------------------|------------------|

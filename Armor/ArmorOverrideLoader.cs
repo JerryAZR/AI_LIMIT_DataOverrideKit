@@ -16,8 +16,8 @@ namespace DataOverrideKit.Armor {
     }
 
     public class ArmorOverrideCollection {
-        public int Count => Headwares.Count + BodyArmors.Count;
-        public Dictionary<int, ArmorOverrideEntry> Headwares { get; set; }
+        public int Count => Headwears.Count + BodyArmors.Count;
+        public Dictionary<int, ArmorOverrideEntry> Headwears { get; set; }
         public Dictionary<int, ArmorOverrideEntry> BodyArmors { get; set; }
     }
 
@@ -27,8 +27,8 @@ namespace DataOverrideKit.Armor {
             Dictionary<int, ArmorOverrideEntry> bodyOverrides = new();
             LoadOverridesJson("UserData/DataOverrideKit/ArmorOverrides.json", ref headOverrides, ref bodyOverrides);
             LoadOverridesToml("UserData/DataOverrideKit/ArmorOverrides.toml", ref headOverrides, ref bodyOverrides);
-            MelonLogger.Msg($"Loaded {headOverrides.Count} headware overrides and {bodyOverrides.Count} body armor overrides.");
-            return new ArmorOverrideCollection { Headwares = headOverrides, BodyArmors = bodyOverrides };
+            MelonLogger.Msg($"Loaded {headOverrides.Count} headwear overrides and {bodyOverrides.Count} body armor overrides.");
+            return new ArmorOverrideCollection { Headwears = headOverrides, BodyArmors = bodyOverrides };
         }
 
         public static void LoadOverridesJson(string path, ref Dictionary<int, ArmorOverrideEntry> headOverrides, ref Dictionary<int, ArmorOverrideEntry> bodyOverrides) {
@@ -78,7 +78,7 @@ namespace DataOverrideKit.Armor {
                             MelonLogger.Warning($"Exception while parsing {kvp.Value}: {tomlEx}");
                         }
                     } else {
-                        MelonLogger.Error($"[ArmorOverrideLoader] Invalid headware ID: {kvp.Key}");
+                        MelonLogger.Error($"[ArmorOverrideLoader] Invalid headwear ID: {kvp.Key}");
                     }
                 }
             }

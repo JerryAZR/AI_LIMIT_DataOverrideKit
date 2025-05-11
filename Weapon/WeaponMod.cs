@@ -11,7 +11,8 @@ namespace DataOverrideKit.Weapon {
         internal static Dictionary<ActionType, ActionGroupOverrideEntry> ActionGroupOverrides;
         internal static Dictionary<string, WeaponOverrideEntry> WeaponOverrides;
         internal static Dictionary<string, WeaponReference> WeaponReferences;
-        internal static Dictionary<int, int> RunTimeSkillSlotOverrides; // Maps weapon family id to skillslot
+        internal static Dictionary<int, int> SkillSwapById; // Maps skill id to skill id
+        internal static Dictionary<int, SkillInfo> SkillInfoByDefineId;
         internal static MelonLogger.Instance Logger;
 
         public static void Initialize(MelonLogger.Instance logger) {
@@ -21,7 +22,9 @@ namespace DataOverrideKit.Weapon {
             logger.Msg("[WeaponMod] Loading WeaponOverrides...");
             WeaponOverrides = WeaponOverrideLoader.LoadOverrides("UserData/DataOverrideKit/WeaponOverrides.json");
             WeaponReferences = WeaponOverrideLoader.LoadReferences("DataOverrideKit.Weapon.WeaponReferences.json");
-            RunTimeSkillSlotOverrides = WeaponReferences.Values.ToDictionary(val => val.FamilyID, val => val.SpecialSkillSlot);
+
+            SkillSwapById = new();
+            SkillInfoByDefineId = new();
         }
 
         [HarmonyPatch(typeof(Config), "Deserialize", new System.Type[] { typeof(ActionGroupDefine), typeof(DataReader) })]
@@ -35,7 +38,6 @@ namespace DataOverrideKit.Weapon {
                         }
                         Logger.Msg($"Patched {numIters} ConfidenceConst(s) of {ins.Type}");
                     }
-
                 }
             }
         }
@@ -54,8 +56,8 @@ namespace DataOverrideKit.Weapon {
                     // Check for compatibility
                     if (ins.ActionGroup == replacement.ActionGroup) {
                         // SkillId links to the skill description in game
+                        SkillSwapById[ins.SkillId] = replacement.SkillId;
                         ins.SkillId = replacement.SkillId;
-                        RunTimeSkillSlotOverrides[ins.FamilyID] = replacement.SpecialSkillSlot;
                     } else {
                         Logger.Warning(
                             $"Ignoring incompatible Skill override: {ins.Resource}({ins.ActionGroup}) -> {entry.SkillReplacement}({replacement.ActionGroup})");
@@ -64,11 +66,21 @@ namespace DataOverrideKit.Weapon {
             }
         }
 
-        [HarmonyPatch(typeof(BackPackManager), "GetWeaponByUniqueId")]
-        static class GetWeaponByUniqueIdPatch {
-            static void Postfix(ref WeaponInfo __result) {
-                if (RunTimeSkillSlotOverrides.TryGetValue(__result.FamilyID, out int newSkill)) {
-                    __result.SpecialSkillSlot = newSkill;
+        [HarmonyPatch(typeof(BackPackManager), "Init")]
+        static class BackPackLoadSkillPatch {
+            static void Postfix(ref BackPackManager __instance) {
+                Logger.Msg($"Post BackPackManager::Init, SkillDic.Count={__instance.SkillDic.Count}");
+                Logger.Msg($"Post BackPackManager::Init, WeaponDic.Count={__instance.WeaponDic.Count}");
+
+                foreach (SkillInfo skill in __instance.SkillDic.Values) {
+                    SkillInfoByDefineId[skill.DefineID] = skill;
+                }
+                // Fix incorrectly swapped skills
+                foreach (WeaponInfo weapon in __instance.WeaponDic.Values) {
+                    int skillID = SkillSwapById.GetValueOrDefault(weapon.Define.SkillId, weapon.Define.SkillId);
+                    if (SkillInfoByDefineId.TryGetValue(skillID, out SkillInfo skillInfo)) {
+                        weapon.SpecialSkillSlot = skillInfo.UniqueID;
+                    }
                 }
             }
         }

@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Support for overriding **accessory (Nucleus)** stats via `AccessoryOverrides.json`/`.toml`
-- Support for overriding **headware and body armor** stats via `ArmorOverrides.json`/`.toml`
+- Support for overriding **headwear and body armor** stats via `ArmorOverrides.json`/`.toml`
 
 ### Fixed
 - Resolved an issue where **weapon skills** might get incorrectly mapped or lost

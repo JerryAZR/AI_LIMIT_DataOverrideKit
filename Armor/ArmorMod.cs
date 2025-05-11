@@ -17,7 +17,7 @@ namespace DataOverrideKit.Armor {
         [HarmonyPatch(typeof(Config), "Deserialize", new System.Type[] { typeof(HeadwearDefine), typeof(DataReader) })]
         static class HeadwearPatch {
             static void Postfix(ref HeadwearDefine ins) {
-                if (ArmorOverrides.Headwares.TryGetValue(ins.ID, out ArmorOverrideEntry entry)) {
+                if (ArmorOverrides.Headwears.TryGetValue(ins.ID, out ArmorOverrideEntry entry)) {
                     if (entry.PhysicsDefense.HasValue) ins.nPhysicsDefenseRate = entry.PhysicsDefense.Value;
                     if (entry.FireDefense.HasValue) ins.nFireDefenseRate = entry.FireDefense.Value;
                     if (entry.ElectricDefense.HasValue) ins.nElectricDefenseRate = entry.ElectricDefense.Value;
