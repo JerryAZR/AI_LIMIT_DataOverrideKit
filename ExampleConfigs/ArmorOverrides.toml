@@ -1,0 +1,10 @@
+[B.20] # Patient's Clothing
+PhysicsDefense=70
+FireDefense=70
+ElectricDefense=70
+PunctureResistance=30
+InfectResistance=30
+
+[H.25] # Long Hair
+FireDefense=30
+ElectricDefense=40
